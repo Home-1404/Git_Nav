@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,500&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  color: #000;
+  scroll-behavior: smooth;
+  font-size: 16px;
+  font-family: "Raleway";
+  margin: 0%;
+  padding: 0%;
+}
+
+.responsive {
+  display: none;
+}
+
+nav {
+  background-color: #333;
+  width: 100%;
+  height: auto;
+  padding: 2em 3em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  background-color: #333;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 10px 12px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #ffa500;
+  transition: all 0.7s ease;
+}
+
+.logo-container {
+  width: auto;
+  height: auto;
+}
+
+.logo-container a {
+  background-color: transparent;
+  color: #fff;
+  font-size: 3rem;
+}
+
+.logo-container a:hover {
+  background-color: transparent;
+  color: #ffa500;
+  transition: all 0.7s ease;
+}
+
+main {
+  padding: 5em;
+  padding-top: 2em;
+  display: flex;
+  flex-direction: column;
+}
+
+main h2 {
+  margin: 0%;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.parrafos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+p {
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  width: 100%;
+  padding: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+footer p {
+  font-size: 1.4rem;
+}
+
+@media screen and (max-width: 958px) {
+  .nav-container {
+    display: none;
+  }
+  .responsive {
+    display: block;
+  }
+}
+
+/* JS */
+
+.button {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid transparent;
+  font-size: 3rem;
+  transition: all 0.7s ease;
+}
+
+.responsive .nav-container-2 {
+  background-color: #333;
+  width: 10em;
+  padding: 5em 2em;
+  display: none;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 7.5em;
+  right: 0%;
+}
